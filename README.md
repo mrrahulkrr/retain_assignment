@@ -14,11 +14,11 @@ Refactored a legacy user management API to improve security, code organization, 
 - **Testing**: Added unit tests and API tests
 
 ### Running Task 1
-\`\`\`bash
+```bash
 cd task1-refactoring/refactored
 pip install -r requirements.txt
 python app.py
-\`\`\`
+```
 
 ### API Endpoints
 - `GET /` - Health check
@@ -43,11 +43,11 @@ Built a complete URL shortening service with analytics and click tracking.
 - Thread-safe concurrent request handling
 
 ### Running Task 2
-\`\`\`bash
+```bash
 cd task2-url-shortener
 pip install -r requirements.txt
 python -m flask --app app.main run
-\`\`\`
+```
 
 ### API Endpoints
 - `GET /` - Health check
@@ -56,7 +56,7 @@ python -m flask --app app.main run
 - `GET /api/stats/<short_code>` - Get URL statistics
 
 ### Example Usage
-\`\`\`bash
+```bash
 # Shorten URL
 curl -X POST http://localhost:5000/api/shorten \
   -H "Content-Type: application/json" \
@@ -67,21 +67,21 @@ curl -L http://localhost:5000/abc123
 
 # Get analytics
 curl http://localhost:5000/api/stats/abc123
-\`\`\`
+```
 
 ## Testing
 
 ### Task 1 Tests
-\`\`\`bash
+```bash
 cd task1-refactoring/refactored
 python -m pytest tests/ -v
-\`\`\`
+```
 
 ### Task 2 Tests
-\`\`\`bash
+```bash
 cd task2-url-shortener
 python -m pytest tests/ -v
-\`\`\`
+```
 
 ## Architecture Decisions
 
